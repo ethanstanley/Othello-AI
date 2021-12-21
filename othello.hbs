@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/othello.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" async></script>
+</head>
+<body style = "background-color:silver;">
+<h1 style = "text-align:center; font-size: 50px; margin:auto; color: Navy;">OTHELLO</h1>
+<div style = "color: Navy;float:left; text-align: center; margin:auto; height:400px; width:400px;  margin-top:75px">
+    <h2 id = "playa1">Player 1 (Black) : {{usern}}</h2>
+    <h2 id = "thing">Player 2 (White) : <input id = "nameis" type="text" placeholder="INSERT NAME..." style = "height:25px; width:75px; background-color: silver; border-color: silver;">  <button id = "ok" onclick = "confirmed()">OK</button></h2>
+    <h1 style = "font-style: italic;">Score</h1>
+    <h4 style = "font-style: italic; margin-top: -25px;">(Black's perspective)</h1>
+    <h1 id = "scoreupdate">0</h1>
+</div>
+<div style = "float:left;margin-top:25px;margin-left: -20px;width:625px; height:625px; ">
+      <canvas id="myCanvas" width="600" height="600" style="border:10px solid black;"> </canvas>
+</div>
+<div style = "color: Navy;float:left;text-align:center; width: 385px; height: 700px;">
+    <h2 id = "userwins" style = "font-size:30px; margin-top:100px;"></h2>
+    <h1 id = "turn" style = "font-style: italic;margin-top:50px; font-size:30px"></h1>
+    <button id = "resume" onclick = "doIt()">RESUME FORMER GAME</button>
+    <h4 id = "noclue">(Only relevant for when you leave game, and want to resume. Board is shown below.)</h4>
+    <h4 id = "boardy" style = "font-size:10px;"></h4>
+</div>
+ <script src="js/othello.js"></script>
+</body>
+</html>
